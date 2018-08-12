@@ -153,18 +153,9 @@
                         <a class="card-image" style="background-image: url('../img/proteksi.jpg');" data-image-full="{{ URL::asset('img/proteksi.jpg') }}">
                           <img src="{{ URL::asset('img/proteksi.jpg') }}">
                         </a>
-                        <a class="card-description p_pru">
+                        <a class="card-description" href="https://convergecult.bandcamp.com/album/jane-doe" target="_blank">
                           <h4>Proteksi</h4>
-                          <p>Rencana perlindungan untuk Anda dan orang yang Anda cintai</p>
-                        </a>
-                      </li>
-                      <li class="card">
-                        <a class="card-image" style="background-image: url('../img/investasi.jpg');" data-image-full="{{ URL::asset('img/investasi.jpg') }}">
-                          <img src="{{ URL::asset('img/investasi.jpg') }}">
-                        </a>
-                        <a class="card-description p_pru">
-                          <h4>Investasi</h4>
-                          <p>Solusi investasi yang dirancang untuk kesejahteraan Anda</p>
+                          <p>Converge</p>
                         </a>
                       </li>
                     </ul>
@@ -193,26 +184,16 @@
       <!-- Contact Me Section -->
       <section class="row bg-pink bg-shadow">
         <div class="col-xs-12">
-          <h1 class="mb-30">Ingin Tau Lebih Lanjut?</h1>
-          <button class="btn btn-default td-btn outline white" data-toggle="modal" data-target="#contactModal">Tanyakan Disini</button>
+          <h1 class="mb-30">Like what you see?</h1>
+          <button class="btn btn-default td-btn outline white" data-toggle="modal" data-target="#contactModal">Send me a message!</button>
         </div>
       </section>
 
       <!-- Footer -->
       <footer class="row text-left bg-honeycomb">
-        <div class="col-xs-8 col-sm-2">
-          <h3>Prudential Indonesia</h3>
-          <p>Tentang</p>
-          <p>Solusi Untuk Anda</p>
-          <p>Tanyakan</p>
-        </div>
-        <div class="col-xs-8 col-sm-2">
-          <h3>Solusi</h3>
-          <p>Pendidikan</p>
-          <p>Kondisi Kritis</p>
-          <p>Kesehatan</p>
-          <p>Proteksi</p>
-          <p>Investasi</p>
+        <div class="col-xs-12 col-sm-6">
+          <h3>Latest Tweet</h3>
+
         </div>
         <!-- <div id="follow-me" class="col-xs-12 col-sm-5 col-sm-offset-1 mb-30">
           <h3>Follow</h3>
