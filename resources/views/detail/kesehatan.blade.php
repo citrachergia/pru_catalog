@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Solusi | Pendidikan</title>
+  <title>Solusi | Kesehatan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="{{ URL::asset('img/logo.png') }}">
@@ -42,12 +42,12 @@
   </nav>
 
   <!-- Header -->
-  <header id="top" class="pendidikan content-solusi">
+  <header id="top" class="kesehatan content-solusi">
     <div class="container text-center">
       <div class="row">
         <div class="col-xs-12">
-          <h1 class="title"><b>PENDIDIKAN</b></h1>
-          <p>Siapkan pendidikan buah hati Anda</p>
+          <h1 class="title"><b>KESEHATAN</b></h1>
+          <p>Perlindungan kesehatan yang menyeluruh untuk Anda dan Keluarga</p>
           <a class="btn td-btn outline white scroll mt-30" href="#content" title="Learn more about me!">Pelajari lebih lanjut</a>
         </div>
       </div>
@@ -59,19 +59,51 @@
     <section id="content" class="row bg-white bg-shadow">
       <ul class="card-list">
         <li class="card">
-          <a href="/pendidikan" class="card-image" style="background-image: url('../img/pendidikan/PRUlink-edu-protection.jpg');" data-image-full="{{ URL::asset('img/pendidikan/PRUlink-edu-protection.jpg') }}">
-            <img src="{{ URL::asset('img/pendidikan/PRUlink-edu-protection.jpg') }}">
+          <a href="" class="card-image" style="background-image: url('../img/kesehatan/KV_PHSC-PLUS-PHSC-PLUS-SYARIAH.jpg');" data-image-full="{{ URL::asset('img/kesehatan/KV_PHSC-PLUS-PHSC-PLUS-SYARIAH.jpg') }}">
+            <img src="{{ URL::asset('img/kesehatan/KV_PHSC-PLUS-PHSC-PLUS-SYARIAH.jpg') }}">
           </a>
           <a class="card-description p_pru">
-            <h4>PRUlink edu protection</h4>
+            <h4>PRUhospital&surgical cover plus</h4>
           </a>
         </li>
         <li class="card">
-          <a href="/pendidikan" class="card-image" style="background-image: url('../img/pendidikan/PRUlink-syariah-edu-protection.jpg');" data-image-full="{{ URL::asset('img/pendidikan/PRUlink-syariah-edu-protection.jpg') }}">
-            <img src="{{ URL::asset('img/pendidikan/PRUlink-syariah-edu-protection.jpg') }}">
+          <a href="" class="card-image" style="background-image: url('../img/kesehatan/PRUmed-cover.jpg');" data-image-full="{{ URL::asset('img/kesehatan/PRUmed-cover.jpg') }}">
+            <img src="{{ URL::asset('img/kesehatan/PRUmed-cover.jpg') }}">
           </a>
           <a class="card-description p_pru">
-            <h4>PRUlink syariah edu protection</h4>
+            <h4>PRUmed cover</h4>
+          </a>
+        </li>
+        <li class="card">
+          <a href="" class="card-image" style="background-image: url('../img/kesehatan/PRUprime-healthcare.jpg');" data-image-full="{{ URL::asset('img/kesehatan/PRUprime-healthcare.jpg') }}">
+            <img src="{{ URL::asset('img/kesehatan/PRUprime-healthcare.jpg') }}">
+          </a>
+          <a class="card-description p_pru">
+            <h4>PRUprime healthcare</h4>
+          </a>
+        </li>
+        <li class="card">
+          <a href="" class="card-image" style="background-image: url('../img/kesehatan/KV_PHSC-PLUS-PHSC-PLUS-SYARIAH_sy.jpg');" data-image-full="{{ URL::asset('img/kesehatan/KV_PHSC-PLUS-PHSC-PLUS-SYARIAH_sy.jpg') }}">
+            <img src="{{ URL::asset('img/kesehatan/KV_PHSC-PLUS-PHSC-PLUS-SYARIAH_sy.jpg') }}">
+          </a>
+          <a class="card-description p_pru">
+            <h4>PRUhospital&surgical cover plus syariah</h4>
+          </a>
+        </li>
+        <li class="card">
+          <a href="" class="card-image" style="background-image: url('../img/kesehatan/PRUmed-cover_sy.jpg');" data-image-full="{{ URL::asset('img/kesehatan/PRUmed-cover_sy.jpg') }}">
+            <img src="{{ URL::asset('img/kesehatan/PRUmed-cover_sy.jpg') }}">
+          </a>
+          <a class="card-description p_pru">
+            <h4>PRUmed cover syariah</h4>
+          </a>
+        </li>
+        <li class="card">
+          <a href="" class="card-image" style="background-image: url('../img/kesehatan/PRUprime-healthcare_sy.jpg');" data-image-full="{{ URL::asset('img/kesehatan/PRUprime-healthcare_sy.jpg') }}">
+            <img src="{{ URL::asset('img/kesehatan/PRUprime-healthcare_sy.jpg') }}">
+          </a>
+          <a class="card-description p_pru">
+            <h4>PRUprime healthcare syariah</h4>
           </a>
         </li>
       </ul>

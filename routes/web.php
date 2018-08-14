@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/pendidikan', function () {
     return view('/detail/pendidikan');
 });
+
+Route::get('/kesehatan', function () {
+    return view('/detail/kesehatan');
+});

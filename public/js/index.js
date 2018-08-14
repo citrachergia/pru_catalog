@@ -134,3 +134,12 @@ function lazyLoad() {
   
 }
 
+
+// =================
+//  SIDE BAR     //
+// ================
+
+$('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });

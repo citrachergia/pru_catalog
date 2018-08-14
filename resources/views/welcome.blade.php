@@ -31,7 +31,19 @@
           <li class="active"><a class="scroll" href="#top">Home <span class="sr-only">(current)</span></a></li>
           <li><a class="scroll" href="#tentang">Tentang</a></li>
           <li><a class="scroll" href="#solusi">Solusi</a></li>
-          <li><button class="btn td-btn small outline red" data-toggle="modal" data-target="#contactModal">Contact</button></li>
+          <li><a class="scroll" href="#layanan">Layanan</a></li>
+          <li>
+            <div class="button_container_burger" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+            <div class="overlay" id="overlay">
+              <nav class="overlay-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Solusi</a></li>
+                  <li><a href="#">Profil</a></li>
+                </ul>
+              </nav>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -42,7 +54,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-xs-6 col-xs-offset-3">
-          <img class="img-responsive center-block logo" src="{{ URL::asset('img/logo.png') }}" alt="TD Logo">
+          <img class="img-responsive center-block logo" src="{{ URL::asset('img/logo.png') }}" alt="PRU Logo">
         </div>
         <div class="col-xs-12">
           <h1 class="title">PRUDENTIAL</h1>
@@ -53,7 +65,7 @@
     </div>
   </header>
 
-  <!-- Tentang -->
+  <!-- Tentang Section -->
   <div id="content" class="container-fluid text-center">
     <section id="tentang" class="row bg-white bg-shadow">
       <div class="row">
@@ -70,34 +82,10 @@
           <p>Prudential Indonesia didirikan pada tahun 1995. Prudential Indonesia merupakan bagian dari Prudential plc, London, Inggris. Di Asia, Prudential Indonesia menginduk pada kantor regional Prudential Corporation Asia (PCA), yang berkedudukan di Hong Kong. Prudential Indonesia sebagai perusahaan di bidang jasa keuangan telah terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK). Lembaga ini dibentuk dengan tujuan agar keseluruhan kegiatan jasa keuangan di dalam sektor jasa keuangan terselenggara secara teratur, adil, transparan, dan akuntabel, serta mewujudkan sistem keuangan yang tumbuh secara berkelanjutan dan stabil mampu melindungi kepentingan konsumen dan masyarakat (Pasal 4 UU OJK).</p>
         </div>
       </div>
-
-
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-          <hr class="dashed">
-          <h2 class="mb-60">What I Do</h2>
-        </div>
-        <!-- <div class="col-sm-3 col-lg-2 col-lg-offset-2">
-          <img class="img-responsive center-block icon" src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/work/rwd-icon.png?raw=true" alt="Responsive Web Design Icon">
-          <p>Responsive Web Design</p>
-        </div>
-        <div class="col-sm-3 col-lg-2">
-          <img class="img-responsive center-block icon" src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/work/ui-ux-icon.png?raw=true" alt="UI/UX Design Icon">
-          <p>UI/UX Design</p>
-        </div>
-        <div class="col-sm-3 col-lg-2">
-          <img class="img-responsive center-block icon" src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/work/dev-icon.png?raw=true" alt="Development Icon">
-          <p>Development</p>
-        </div>
-        <div class="col-sm-3 col-lg-2 mb-30">
-          <img class="img-responsive center-block icon" src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/work/star-icon.png?raw=true" alt="Identity and Branding Icon">
-          <p>Identity &amp; Branding</p>
-        </div> -->
-      </div>
     </section>
 
 
-    <!-- Portfolio Section -->
+    <!-- PSolusi Section -->
     <section id="solusi" class="row bg-star-y">
       <div class="row">
         <div class="col-xs-12">
@@ -107,7 +95,6 @@
       <div class="row">
         <div id="projects" class="carousel slide col-xs-12" data-ride="carousel" data-interval="false">
           <div class="row">
-            <!-- Carousel Prev Button -->
             <div class="col-xs-1">
               <a class="left carousel-control" href="#projects" role="button" data-slide="prev">
                 <span class="p_pru" aria-hidden="true"><</span>
@@ -143,70 +130,89 @@
                       <a class="card-description p_pru">
                         <h4>Kesehatan</h4>
                         <p>Perlindungan kesehatan untuk Anda dan keluarga</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="item">
-                    <ul class="card-list">
-                      <li class="card">
-                        <a class="card-image" style="background-image: url('../img/proteksi.jpg');" data-image-full="{{ URL::asset('img/proteksi.jpg') }}">
-                          <img src="{{ URL::asset('img/proteksi.jpg') }}">
-                        </a>
-                        <a class="card-description p_pru">
-                          <h4>Proteksi</h4>
-                          <p>Rencana perlindungan untuk Anda dan orang yang Anda cintai</p>
-                        </a>
-                      </li>
-                      <li class="card">
-                        <a class="card-image" style="background-image: url('../img/investasi.jpg');" data-image-full="{{ URL::asset('img/investasi.jpg') }}">
-                          <img src="{{ URL::asset('img/investasi.jpg') }}">
-                        </a>
-                        <a class="card-description p_pru">
-                          <h4>Investasi</h4>
-                          <p>Solusi investasi yang dirancang untuk kesejahteraan Anda</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div><!-- /.carousel-inner -->
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="item">
+                  <ul class="card-list">
+                    <li class="card">
+                      <a class="card-image" style="background-image: url('../img/proteksi.jpg');" data-image-full="{{ URL::asset('img/proteksi.jpg') }}">
+                        <img src="{{ URL::asset('img/proteksi.jpg') }}">
+                      </a>
+                      <a class="card-description p_pru">
+                        <h4>Proteksi</h4>
+                        <p>Rencana perlindungan untuk Anda dan orang yang Anda cintai</p>
+                      </a>
+                    </li>
+                    <li class="card">
+                      <a class="card-image" style="background-image: url('../img/investasi.jpg');" data-image-full="{{ URL::asset('img/investasi.jpg') }}">
+                        <img src="{{ URL::asset('img/investasi.jpg') }}">
+                      </a>
+                      <a class="card-description p_pru">
+                        <h4>Investasi</h4>
+                        <p>Solusi investasi yang dirancang untuk kesejahteraan Anda</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-xs-1">
-                <!-- Carousel Next Button -->
-                <a class="right carousel-control" href="#projects" role="button" data-slide="next">
-                  <span class="p_pru" aria-hidden="true">></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div><!-- / Next Btn -->
-              <div class="col-xs-12 mt-60">
-                <ol class="carousel-indicators mt-30">
-                  <li data-target="#projects" data-slide-to="0" class="active"></li>
-                  <li data-target="#projects" data-slide-to="1"></li>
-                </ol>
-              </div><!-- /.col -->
-            </div><!-- /.row -->
-          </div><!-- /#projects -->
-        </div><!-- /.row -->
-      </section>
+            </div>
+            <div class="col-xs-1">
+              <a class="right carousel-control" href="#projects" role="button" data-slide="next">
+                <span class="p_pru" aria-hidden="true">></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="col-xs-12 mt-60">
+              <ol class="carousel-indicators mt-30">
+                <li data-target="#projects" data-slide-to="0" class="active"></li>
+                <li data-target="#projects" data-slide-to="1"></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-      <!-- Contact Me Section -->
-      <section class="row bg-pink bg-shadow">
+    <!-- Layanan Section -->
+    <section class="row bg-pink bg-shadow" id="layanan">
+      <div class="row">
         <div class="col-xs-12">
-          <h1 class="mb-30">Ingin Tau Lebih Lanjut?</h1>
-          <button class="btn btn-default td-btn outline white" data-toggle="modal" data-target="#contactModal">Tanyakan Disini</button>
+          <h1 class="mb-30 mt-30">Layanan Kami</h1>
         </div>
-      </section>
+      </div>
+      <div class="row mt-30">
+        <div class="col-sm-3 col-lg-2 col-lg-offset-3 text-center">
+          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/heart.png') }}" alt="Kesehatan">
+          <p class="mb-60">Rumah Sakit</p>
+          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/dress.png') }}" alt="PRUboutiques">
+          <p class="mb-60">PRUboutiques</p>
+        </div>
+        <div class="col-sm-3 col-lg-2 text-center">
+          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/claim.png') }}" alt="Klaim">
+          <p class="mb-60">Layanan Klaim</p>
+          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/wallet.png') }}" alt="Jasa_Transaksi">
+          <p class="mb-60">Informasi Jasa & Transaksi</p>
+        </div>
+        <div class="col-sm-3 col-lg-2 text-center">
+          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/badge.png') }}" alt="PRUflayers">
+          <p class="mb-60">PRUflayers</p>
+          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/support.png') }}" alt="Nasabah">
+          <p class="mb-60">Informasi Nasabah</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="row text-left bg-honeycomb">
-        <div class="col-xs-8 col-sm-2">
-          <h3>Prudential Indonesia</h3>
-          <p>Tentang</p>
-          <p>Solusi Untuk Anda</p>
-          <p>Tanyakan</p>
+    <!-- Footer -->
+    <footer class="row bg-honeycomb">
+      <div class="row mb-30 mt-30">
+        <div class="col-sm-3 col-lg-2 col-lg-offset-1 text-left">
+          <h3>Prudential</h3>
+          <p>Solusi</p>
+          <p>Profil Kami</p>
         </div>
-        <div class="col-xs-8 col-sm-2">
+        <div class="col-sm-3 col-lg-2 text-left">
           <h3>Solusi</h3>
           <p>Pendidikan</p>
           <p>Kondisi Kritis</p>
@@ -214,78 +220,37 @@
           <p>Proteksi</p>
           <p>Investasi</p>
         </div>
-        <!-- <div id="follow-me" class="col-xs-12 col-sm-5 col-sm-offset-1 mb-30">
-          <h3>Follow</h3>
-         <a class="social" href="https://www.linkedin.com/in/tiffanyadu/" target="_blank" title="LinkedIn">
-          <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/LinkedIn-black.png?raw=true" alt="LinkedIn Icon">
-        </a>
-        <a class="social" href="https://twitter.com/dusign/" target="_blank" title="Twitter">
-          <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Twitter-black.png?raw=true" alt="Twitter Icon">
-        </a>
-        <a class="social" href="https://www.instagram.com/dusign/" target="_blank" title="Instagram">
-          <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Instagram-black.png?raw=true" alt="Instagram Icon">
-        </a>
-        <a class="social" href="https://github.com/tiffanyadu/" target="_blank" title="Github">
-          <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Github-black.png?raw=true" alt="Github Icon">
-        </a>
-        <a class="social" href="https://codepen.io/tiffanyadu/" target="_blank" title="Codepen">
-          <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Codepen-black.png?raw=true" alt="Codepen Icon">
-        </a>
-        </div> -->
-        <div class="col-xs-12 text-center">
-          <hr class="dashed">
-          <small class="gray">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Citra Chergia &mdash; PT. Prudential Life Assurance</small>
+        <div class="col-sm-3 col-lg-3 text-left">
+          <h3>Profil</h3>
+          <p>Tentang Perusahaan</p>
+          <p>Grup Kami</p>
+          <p>Penghargaan</p>
+          <p>Galeri</p>
         </div>
-      </footer>
-    </div>
-
-    <!-- Contact Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactTitle">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content bg-pink">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="contactTitle">Contact Me</h3>
-          </div>
-          <!-- /.modal-header -->
-          <div class="modal-body">
-            <form class="mb-15">
-              <div class="form-group">
-                <label class="sr-only" for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="subject">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="message">Message</label>
-                <textarea class="form-control" id="message" rows="6" placeholder="Your message here..." required></textarea>
-              </div>
-              <small>*All fields are required</small>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> I'm a robot!
-                </label>
-              </div>
-            </form>
-            <div class="modal-footer">
-              <button type="button" class="btn td-btn outline small white" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn td-btn outline small white">Send Message</button>
-            </div>
-          </div>
+        <div class="col-sm-3 col-lg-4 text-left">
+          <h3>Ikuti Kami</h3>
+          <a class="social" href="https://www.linkedin.com/company/prudential-indonesia-pt-prudential-life-assurance-/" target="_blank" title="LinkedIn">
+            <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/LinkedIn-black.png?raw=true" alt="LinkedIn Icon">
+          </a>
+          <a class="social" href="https://twitter.com/PRU_ID?lang=en" target="_blank" title="Twitter">
+            <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Twitter-black.png?raw=true" alt="Twitter Icon">
+          </a>
+          <a class="social" href="https://www.instagram.com/id_prudential/?hl=en" target="_blank" title="Instagram">
+            <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Instagram-black.png?raw=true" alt="Instagram Icon">
+          </a>
         </div>
       </div>
-    </div>
-  </body>
+      <div class="col-xs-12 text-center">
+        <hr class="dashed">
+        <small class="gray">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Citra Chergia &mdash; PT. Prudential Life Assurance</small>
+      </div>
+    </footer>
+  </div>
+</body>
 
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-  <script src="{{ URL::asset('js/index.js') }}"></script>
-  <script src="{{ URL::asset('js/angular.min.js') }}"></script>
-  <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="{{ URL::asset('js/index.js') }}"></script>
+<script src="{{ URL::asset('js/angular.min.js') }}"></script>
+<script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 
-  </html>
+</html>
