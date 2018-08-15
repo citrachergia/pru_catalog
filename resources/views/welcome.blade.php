@@ -27,7 +27,7 @@
         <div class="col-xs-12">
           <h1 class="title">PRUDENTIAL</h1>
           <p>Always Listening. Always Understanding.</p>
-          <a class="btn td-btn outline green scroll mt-30" href="#content" title="Learn more about me!">Pelajari lebih lanjut</a>
+          <a class="btn td-btn outline green scroll mt-30" href="#content">Pelajari lebih lanjut</a>
         </div>
       </div>
     </div>
@@ -47,13 +47,13 @@
         </div>
         <div class="col-sm-offset-2 col-md-5 col-md-offset-0 col-lg-4 text-justify">
           <h4>Selamat Datang di Prudential Indonesia!</h4>
-          <p>Prudential Indonesia didirikan pada tahun 1995. Prudential Indonesia merupakan bagian dari Prudential plc, London, Inggris. Di Asia, Prudential Indonesia menginduk pada kantor regional Prudential Corporation Asia (PCA), yang berkedudukan di Hong Kong. Prudential Indonesia sebagai perusahaan di bidang jasa keuangan telah terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK). Lembaga ini dibentuk dengan tujuan agar keseluruhan kegiatan jasa keuangan di dalam sektor jasa keuangan terselenggara secara teratur, adil, transparan, dan akuntabel, serta mewujudkan sistem keuangan yang tumbuh secara berkelanjutan dan stabil mampu melindungi kepentingan konsumen dan masyarakat (Pasal 4 UU OJK).</p>
+          <p>Prudential Indonesia didirikan pada tahun 1995. Prudential Indonesia merupakan bagian dari Prudential plc, London, Inggris. Di Asia, Prudential Indonesia menginduk pada kantor regional Prudential Corporation Asia (PCA), yang berkedudukan di Hong Kong. Prudential Indonesia sebagai perusahaan di bidang jasa keuangan telah terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK). </p>
         </div>
       </div>
     </section>
 
 
-    <!-- PSolusi Section -->
+    <!-- Solusi Section -->
     <section id="solusi" class="row bg-star-y">
       <div class="row">
         <div class="col-xs-12">
@@ -143,36 +143,9 @@
       </div>
     </section>
 
-    <!-- Layanan Section -->
-    <section class="row bg-pink bg-shadow" id="layanan">
-      <div class="row">
-        <div class="col-xs-12">
-          <h1 class="mb-30 mt-30">Layanan Kami</h1>
-        </div>
-      </div>
-      <div class="row mt-30">
-        <div class="col-sm-3 col-lg-2 col-lg-offset-3 text-center">
-          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/heart.png') }}" alt="Kesehatan">
-          <p class="mb-60">Rumah Sakit</p>
-          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/dress.png') }}" alt="PRUboutiques">
-          <p class="mb-60">PRUboutiques</p>
-        </div>
-        <div class="col-sm-3 col-lg-2 text-center">
-          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/claim.png') }}" alt="Klaim">
-          <p class="mb-60">Layanan Klaim</p>
-          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/wallet.png') }}" alt="Jasa_Transaksi">
-          <p class="mb-60">Informasi Jasa & Transaksi</p>
-        </div>
-        <div class="col-sm-3 col-lg-2 text-center">
-          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/badge.png') }}" alt="PRUflayers">
-          <p class="mb-60">PRUflayers</p>
-          <img class="img-responsive center-block icon" src="{{ URL::asset('img/icon/support.png') }}" alt="Nasabah">
-          <p class="mb-60">Informasi Nasabah</p>
-        </div>
-      </div>
-    </section>
+    @include('layout.service')    
 
-   @include('layout.footer')
+    @include('layout.footer')
 
   </div>
 </body>

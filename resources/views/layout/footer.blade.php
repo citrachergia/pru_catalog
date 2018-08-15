@@ -17,8 +17,8 @@
           <h3>Profil</h3>
           <a href="/profil"><p>Tentang Perusahaan</p></a>
           <a href="/profil"><p>Grup Kami</p></a>
-          <a href="/profil"><p>Penghargaan</p></a>
-          <a href="/profil"><p>Galeri</p></a>
+          <a href="/profil"><p>Arti Logo</p></a>
+          <a href="/profil"><p>Layanan Kami</p></a>
         </div>
         <div class="col-sm-3 col-lg-4 text-left">
           <h3>Ikuti Kami</h3>

@@ -190,7 +190,19 @@ hr {
 }
 
 .solusi {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pru_office2.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/solusi.jpg") center no-repeat;
+}
+
+.proteksi {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/proteksi.jpg") center no-repeat;
+}
+
+.investasi {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/investasi.jpg") center no-repeat;
+}
+
+.profil {
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/pru_office2.jpg") center no-repeat;
 }
 
 .hd-viewdetail {
@@ -263,6 +275,14 @@ hr {
   margin: 0;
 }
 
+.h1-title h1 {
+  color: #ED1B2E;
+}
+
+.h1-title p {
+  color: #333;
+}
+
 .padding-ct {
   padding: 0 80px;
 }
@@ -273,6 +293,11 @@ hr {
   width: 100%;
   margin: 30px 0;
 }
+
+.img-logo {
+  width: 50%;
+}
+
 
 /* =====================
   Containers
@@ -910,6 +935,7 @@ footer.row {
   .mg-responsive {
     margin-left: 0;
   }
+
 }
 @media (max-width: 767px) {
   /*** Page Elements ***/
@@ -920,6 +946,9 @@ footer.row {
   /*** Jumbotron ***/
   .jumbotron .logo {
     max-width: 120px;
+  }
+  .img-logo {
+    width: 100%;
   }
   /*** Mobile Nav ***/
   .navbar-toggle {

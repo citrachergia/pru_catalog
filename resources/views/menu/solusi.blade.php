@@ -40,14 +40,14 @@
         <div class="col-md-7 col-md-offset-0 col-lg-5 text-justify">
           <h4><b>Pendidikan</b></h4>
           <p>Siapkan pendidikan buah hati Anda dan bersiaplah untuk mengamankan kebutuhan dan perlindungan pendidikan anak-anak Anda</p>
-          <a class="btn td-btn outline green scroll mb-30" href="/pendidikan"> Lihat Selengkapnya </a>
+          <a href="/pendidikan" class="btn td-btn outline green mb-30"> Lihat Selengkapnya </a>
         </div>
       </div>
       <div class="row mt-30 mb-60">
         <div class="col-sm-offset-2 col-md-7 col-md-offset-2 col-lg-5 text-justify mg-responsive">
           <h4><b>Kondisi Kritis</b></h4>
           <p>Dukungan finansial Anda ketika kondisi kritis melanda</p>
-          <a class="btn td-btn outline green scroll mb-30" href="/kondisi-kritis"> Lihat Selengkapnya </a>
+          <a  href="/kondisi-kritis"><button class="btn td-btn outline green mb-30">Lihat Selengkapnya</button>  </a>
         </div>
         <div class="col-md-3 col-md-offset-0">
           <img class="img-cube img-responsive center-block mb-30" src="{{ URL::asset('img/kritis.jpg') }}" alt="Kondisi Kritis">
@@ -60,14 +60,14 @@
         <div class="col-md-7 col-md-offset-0 col-lg-5 text-justify">
           <h4><b>Kesehatan</b></h4>
           <p>Perlindungan kesehatan untuk Anda dan keluarga.</p>
-          <a class="btn td-btn outline green scroll mb-30" href="/kesehatan"> Lihat Selengkapnya </a>
+          <a class="btn td-btn outline green mb-30" href="/kesehatan"> Lihat Selengkapnya </a>
         </div>
       </div>
       <div class="row mt-30 mb-60">
         <div class="col-sm-offset-2 col-md-7 col-md-offset-2 col-lg-5 text-justify mg-responsive">
           <h4><b>Proteksi</b></h4>
           <p>Rencana perlindungan yang kami rancang untuk melindungi Anda dan orang yang Anda cintai dari ketidakpastian.</p>
-          <a class="btn td-btn outline green scroll mb-30" href="/proteksi"> Lihat Selengkapnya </a>
+          <a class="btn td-btn outline green mb-30" href="/proteksi"> Lihat Selengkapnya </a>
         </div>
         <div class="col-md-3 col-md-offset-0">
           <img class="img-cube img-responsive center-block mb-30" src="{{ URL::asset('img/proteksi.jpg') }}" alt="Proteksi">
@@ -80,7 +80,7 @@
         <div class="col-md-7 col-md-offset-0 col-lg-5 text-justify">
           <h4><b>Investasi</b></h4>
           <p>Solusi investasi yang dirancang untuk meningkatkan kesejahteraan Anda</p>
-          <a class="btn td-btn outline green scroll mb-30" href="/investasi"> Lihat Selengkapnya </a>
+          <a class="btn td-btn outline green mb-30" href="/investasi"> Lihat Selengkapnya </a>
         </div>
       </div>
     </section>
