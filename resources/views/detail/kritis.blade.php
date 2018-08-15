@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Pendidikan | Solusi</title>
+  <title>Kondisi Kritis | Solusi</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="{{ URL::asset('img/logo.png') }}">
@@ -18,12 +18,12 @@
 <body data-spy="scroll" data-target="#main-nav" data-offset="60">
 
   <!-- Header -->
-  <header id="top" class="pendidikan content-solusi">
+  <header id="top" class="kritis content-solusi">
     <div class="container text-center">
       <div class="row">
         <div class="col-xs-12">
-          <h1 class="title"><b>PENDIDIKAN</b></h1>
-          <p>Siapkan pendidikan buah hati Anda</p>
+          <h1 class="title"><b>KONDISI KRITIS</b></h1>
+          <p>Dukungan finansial Anda ketika kondisi kritis melanda</p>
           <a class="btn td-btn outline white scroll mt-30" href="#content" title="Learn more about me!">Pelajari lebih lanjut</a>
         </div>
       </div>

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
+
+@extends('layout.header')
 
 <head>
   <meta charset="UTF-8">
@@ -14,40 +16,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" data-offset="60">
-
-  <!-- Fixed Navbar -->
-  <nav id="main-nav" class="navbar navbar-default ">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <!-- Menu Toggle -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <a class="navbar-brand scroll" href="#top"><img class="pull-left logo" src="{{ URL::asset('img/logo.png') }}" alt="Pru Logo"><span>Prudential</span></a>
-      </div>
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a class="scroll" href="#top">Home <span class="sr-only">(current)</span></a></li>
-          <li><a class="scroll" href="#tentang">Tentang</a></li>
-          <li><a class="scroll" href="#solusi">Solusi</a></li>
-          <li><a class="scroll" href="#layanan">Layanan</a></li>
-          <li>
-            <div class="button_container_burger" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
-            <div class="overlay" id="overlay">
-              <nav class="overlay-menu">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Solusi</a></li>
-                  <li><a href="#">Profil</a></li>
-                </ul>
-              </nav>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
   <!-- Header -->
   <header id="top" class="jumbotron">
@@ -115,7 +83,7 @@
                       </a>
                     </li>
                     <li class="card">
-                      <a href="/pendidikan" class="card-image" style="background-image: url('../img/kritis.jpg');" data-image-full="{{ URL::asset('img/kritis.jpg') }}">
+                      <a href="/kondisi-kritis" class="card-image" style="background-image: url('../img/kritis.jpg');" data-image-full="{{ URL::asset('img/kritis.jpg') }}">
                         <img src="{{ URL::asset('img/kritis.jpg') }}">
                       </a>
                       <a class="card-description p_pru">
@@ -124,7 +92,7 @@
                       </a>
                     </li>
                     <li class="card">
-                      <a href="/pendidikan" class="card-image" style="background-image: url('../img/kesehatan.jpg');" data-image-full="{{ URL::asset('img/kesehatan.jpg') }}">
+                      <a href="/kesehatan" class="card-image" style="background-image: url('../img/kesehatan.jpg');" data-image-full="{{ URL::asset('img/kesehatan.jpg') }}">
                         <img src="{{ URL::asset('img/kesehatan.jpg') }}">
                       </a>
                       <a class="card-description p_pru">
@@ -137,7 +105,7 @@
                 <div class="item">
                   <ul class="card-list">
                     <li class="card">
-                      <a class="card-image" style="background-image: url('../img/proteksi.jpg');" data-image-full="{{ URL::asset('img/proteksi.jpg') }}">
+                      <a href="/proteksi" class="card-image" style="background-image: url('../img/proteksi.jpg');" data-image-full="{{ URL::asset('img/proteksi.jpg') }}">
                         <img src="{{ URL::asset('img/proteksi.jpg') }}">
                       </a>
                       <a class="card-description p_pru">
@@ -146,7 +114,7 @@
                       </a>
                     </li>
                     <li class="card">
-                      <a class="card-image" style="background-image: url('../img/investasi.jpg');" data-image-full="{{ URL::asset('img/investasi.jpg') }}">
+                      <a href="/investasi" class="card-image" style="background-image: url('../img/investasi.jpg');" data-image-full="{{ URL::asset('img/investasi.jpg') }}">
                         <img src="{{ URL::asset('img/investasi.jpg') }}">
                       </a>
                       <a class="card-description p_pru">
@@ -204,53 +172,13 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="row bg-honeycomb">
-      <div class="row mb-30 mt-30">
-        <div class="col-sm-3 col-lg-2 col-lg-offset-1 text-left">
-          <h3>Prudential</h3>
-          <p>Solusi</p>
-          <p>Profil Kami</p>
-        </div>
-        <div class="col-sm-3 col-lg-2 text-left">
-          <h3>Solusi</h3>
-          <p>Pendidikan</p>
-          <p>Kondisi Kritis</p>
-          <p>Kesehatan</p>
-          <p>Proteksi</p>
-          <p>Investasi</p>
-        </div>
-        <div class="col-sm-3 col-lg-3 text-left">
-          <h3>Profil</h3>
-          <p>Tentang Perusahaan</p>
-          <p>Grup Kami</p>
-          <p>Penghargaan</p>
-          <p>Galeri</p>
-        </div>
-        <div class="col-sm-3 col-lg-4 text-left">
-          <h3>Ikuti Kami</h3>
-          <a class="social" href="https://www.linkedin.com/company/prudential-indonesia-pt-prudential-life-assurance-/" target="_blank" title="LinkedIn">
-            <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/LinkedIn-black.png?raw=true" alt="LinkedIn Icon">
-          </a>
-          <a class="social" href="https://twitter.com/PRU_ID?lang=en" target="_blank" title="Twitter">
-            <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Twitter-black.png?raw=true" alt="Twitter Icon">
-          </a>
-          <a class="social" href="https://www.instagram.com/id_prudential/?hl=en" target="_blank" title="Instagram">
-            <img src="https://github.com/tiffanyadu/portfolio/blob/master/assets/icons/social/Instagram-black.png?raw=true" alt="Instagram Icon">
-          </a>
-        </div>
-      </div>
-      <div class="col-xs-12 text-center">
-        <hr class="dashed">
-        <small class="gray">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Citra Chergia &mdash; PT. Prudential Life Assurance</small>
-      </div>
-    </footer>
+   @include('layout.footer')
+
   </div>
 </body>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src="{{ URL::asset('js/index.js') }}"></script>
-<script src="{{ URL::asset('js/angular.min.js') }}"></script>
 <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 
 </html>

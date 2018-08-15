@@ -11,9 +11,17 @@
 |
 */
 
+// ===========================//
+//         Main page          //
+// ===========================//
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// ===========================//
+//        detail page         //
+// ===========================//
 
 Route::get('/pendidikan', function () {
     return view('/detail/pendidikan');
@@ -22,3 +30,39 @@ Route::get('/pendidikan', function () {
 Route::get('/kesehatan', function () {
     return view('/detail/kesehatan');
 });
+
+Route::get('/kondisi-kritis', function () {
+    return view('/detail/kritis');
+});
+
+Route::get('/proteksi', function () {
+    return view('/detail/proteksi');
+});
+
+Route::get('/investasi', function () {
+    return view('/detail/investasi');
+});
+
+
+// ===========================//
+//          menu page         //
+// ===========================//
+
+Route::get('/solusi', function () {
+    return view('/menu/solusi');
+});
+Route::get('/profil', function () {
+    return view('/menu/profil');
+});
+
+
+// ===========================//
+//      viewdetail page       //
+// ===========================//
+
+Route::get('/solusi/viewdetail', function () {
+    return view('/viewdetail/viewdetail');
+});
+// Route::get('/solusi/{nama_produk}', 'DetailController@viewdetail');
+
+

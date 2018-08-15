@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 
 <head>
   <meta charset="UTF-8">
-  <title>Kesehatan | Solusi</title>
+  <title>Profil Perusahaan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="{{ URL::asset('img/logo.png') }}">
@@ -209,7 +209,6 @@
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src="{{ URL::asset('js/index.js') }}"></script>
-<script src="{{ URL::asset('js/angular.min.js') }}"></script>
 <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
 
 </html>
